@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - ground
+  - Enemy
+  - collectable
+  - Attack
+  - Defense
+  - Food
+  - Haste
+  - Key
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Player
+  - Shuriken
+  - Enemy
+  - Ground
+  - Enemy Projectile
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 398741855
+    locked: 0
+  - name: Acid
+    uniqueID: 905414431
+    locked: 0
+  - name: Ground
+    uniqueID: 2534652641
+    locked: 0
+  - name: Player
+    uniqueID: 2211082209
+    locked: 0
+  - name: Goblin
+    uniqueID: 871735441
+    locked: 0
+  - name: Imp
+    uniqueID: 2508103567
+    locked: 0
+  - name: Forground
+    uniqueID: 2424854545
+    locked: 0

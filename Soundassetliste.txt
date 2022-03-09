@@ -1,0 +1,84 @@
+Sound Liste für Shadoe Blade Vendetta:
+
+
+gameplay spieler
+
+-lauf sound Ninja
+-todes sound  Ninja
+-jump sound  Ninja
+-dash sound ninja
+-schlag sound schwert/katana
+-fernkampf sound wurfstern
+-fähigkeit 1 schwert/katana combo
+-treffer sound wenn er gehittet wird 
+
+
+Obtionen A ohne Artist
+-Minions:
+
+- Nahkämpfer:
+
+ - Todes sound
+ - Lauf sound
+ - Hit sound 
+ - schlag sound
+
+- Fernkämpfer:
+ - Todes sound
+ - Lauf sound
+ - Hit sound 
+ - schuss sound
+
+
+-Endboss: 
+
+ - Todes sound
+ - Lauf sound
+ - Hit sound 
+ - wurf sound
+ - schlag sound
+ - wirbel sound
+
+
+Obtionen B mit Artist
+-Minions:
+
+- Golem:
+- Todes sound
+- Lauf sound
+- Hit sound 
+- schlag sound
+
+- Ninja Schützen
+- Todes sound
+- Lauf sound
+- Hit sound 
+- schuss sound
+
+
+-Endboss: 
+
+- Verfluchter Runen Ninja (Rage schwert attacke, Shuriken Regen, Sensen Wirbel)
+- Todes sound
+- Lauf sound
+- Hit sound 
+- wurf sound
+- schlag sound
+- wirbel sound
+
+
+gameplay allgemeiner sound:
+
+- lv up sound
+- zerstörte kisten sound
+- einsammel sound
+- level finish sound
+- button sound klick
+- button sound mouseover 
+- levelsound umgebung tempel
+- menü sound evtl extra credits sound
+- pause sound
+- Jump Pad
+- Dart Trap
+- Spike sound
+

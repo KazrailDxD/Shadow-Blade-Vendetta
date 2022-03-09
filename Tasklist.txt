@@ -1,0 +1,183 @@
+Shadow Blade Vendetta Tasklist
+(Aufgaben werden gezielt am Anfang einer Woche verteilt)
+
+Player
+	- Controller (cplex 14) (3 MT) (prio 1) (Patrick) (done)
+		- Steuerung
+			- Move (A, D)
+			- Jump (Leertaste)
+				- Spieler kann sich weiterhin bewegen
+		- Dash (Shift)
+			- Dash Richtung ist abhängig von der Blickrichtung des Spielers (wird durch Bewegung beeinflusst)
+			- Geht nur seitwärts
+	- Kamera (cplex 10) (2 MT) (prio 1)
+		- Automatische Kameraverfolgung
+		- Kamera wird fixiert, wenn der Spieler einen Boss angreift (done)
+	
+	- Attribute (cplex 20) (5 MT) (prio 3) (Kay) (done)
+		- der Spieler hat folgende Attribute
+			- der Spieler startet mit 10 Health Points
+			- Attack Power
+				- Erhöht verursachten Schaden des Spielers
+			- Defense
+				- Verringert erlittenen Schaden
+			- Haste (Tempo)
+				- Verringert den Cooldown von Fähigkeiten
+
+	- Fähigkeiten (cplex 80) (10 MT) (prio 2) (Younes) (done)
+		- Der Schaden aller Fähigkeiten berechnet sich aus der Attack Power des Spielers
+		- Jede Fähigkeit setzt jede Fähigkeit für eine Sekunde auf Cooldown (Zeit wird durch Haste verringert)
+		- Fähigkeiten werden durch das Spieler Level freigeschaltet
+		- Standard Nahkampf Angriff (Mouse 1) (Level 1)
+			- Spieler schlägt mit seinem Katana in Blickrichtung
+		- Standard Fernkampf Angriff (Mouse 2) (Level 5)
+			- Spieler schmeißt Shuriken in Richtung Mouse Cursor
+			- Shuriken wird zerstört, sobald er mit einem Gegner oder der Umgebung kollidiert
+		- Spezial Fähigkeit 1 "Dancing Blades" (Taste "1") (Level 10)
+			- Hitkombo über paar Sekunden in Blickrichtung
+		
+		
+	- Level System (cplex 60) (7 MT) (prio 2) (Kay) (done)
+		- Es gibt unendlich viele Level
+		- Der Spieler startet mit Level 1
+		- Der Spieler bekommt Erfahrung bei einem Kill von einem Monster
+		- Benötigte Erfahrung steigt pro Level
+		- Pro Level werden die Grundattribute erhöht
+			
+		
+Gegner
+	Gegner Spawner (cplex 27) (2 MT) (prio 4) (Kay) (done)
+		- spawned Minions über Zeit nach, wenn die ursprüngliche Anzahl dabei nicht überschritten wird
+		
+	Gegner
+	- Gegnerarten (cplex 27) (3 MT) (prio 3) (Younes) (done)
+		- Gegner haben Health Points
+		- Gegner sterben bei 0 Health Points
+		- Gegner haben eine "aggro range", bei der sie anfangen den Spieler anzugreifen
+	
+		- Minions (cplex 60) (10 MT) (prio 3) (Younes) (done)
+			- Minions patrouillieren hin und her
+			- Nahkämpfer
+				- Golem
+			- Fernkämpfer
+				- Ninja Schütze
+				
+		- Endboss (cplex 100) (10 MT) (prio 4) (Younes) (done)
+			- der Endboss hat verschiedene Fähigkeiten, welche in einer festen Reihenfolge verwendet werden
+			- Diese Reihenfolge wird ständig wiederholt
+				- Fähigkeiten
+					- Schwert Attacke
+					- Feuer Attacke
+					- Lightning Storm
+	
+UI
+	- Hauptmenü (cplex 15) (3 MT) (prio 4) (Patrick) (done)
+		- Spiel starten
+			- startet das Spiel oder lädt vorhandenes Spiel
+		- Spiel beenden
+		- Settings (Kay)
+			- Audio Lautstärke
+		- Credits
+	
+	- Ingame UI (cplex 18) (5 MT) (prio 3) (Patrick) (done)
+		- Spieler HP Balken (links oben)
+		- Fähigkeiten (mitte unten)
+			- Buttons, welche die Cooldowns der Fähigkeiten anzeigt
+		- Spieler EP (Kay)
+			- Balken, welcher den Level Fortschritt anzeigt
+		- Escape Taste (done)
+			- öffnet Ingame Menü, in dem man zum Hauptmenü zurückkehren kann
+			- pausiert das Spiel
+		
+
+Collectables (cplex 27) (5 MT) (prio 3) (Kay) (done)
+	- Essen
+		- regeneriert ein halbes Herz (1 hp)
+		- kann die maximale HP des Spieler bis auf 20 erhöhen
+	- Buddah
+		- erhöht Spieler defense für eine Minute
+	- Schriftrolle
+		- erhöht Spieler attack power für eine Minute
+	- Glücksbringer
+		- setzt den cooldown der Spezial Fähigkeit auf null für eine Minute
+	- Münze
+		- es werden x Münzen benötigt um den Bossraum betreten zu können
+
+Environment (cplex 40) (10 MT) (prio 3)
+	- Level Design (Patrick) (Work in progress)
+		- Stil: Tempel
+		
+		- Gadgets (Kay) (done)
+			- Jump Pad
+				- wenn der Spieler das Jump Pad berührt, wird er nach oben geschleudert
+			- Moving Platforms (Kay) (done)
+			- Falling Platforms (Kay) (done)
+		
+		- Traps (Kay) (done)
+			- Spike Trap
+				- wenn der Spieler einen Spike berührt, erleidet er Schaden (pro Sekunde)
+			- Dart Trap
+				- wenn der Spieler in die Nähe der Dart Trap kommt, schießt diese in Richtung Spieler.
+				
+Animationen (cplex 53) (7 MT) (prio 4) (Patrick) (done)
+	- Spieler Animationen
+	- Gegner Animationen
+		- Minions
+		- Endboss
+		
+Partikeleffekte (cplex 15) (5 MT) (prio 6) (Patrick)
+	- Player Movement (done)
+	- Player Level UP (done)
+	- Einsammeln von Collectables
+	- Enemy Movement
+	- End Boss Projectile Impacts
+	- Acid
+	- Dancing Blades
+	
+		
+Sound (cplex 33) (5 MT) (prio 5) (Kay) (done)
+	- Menü Sound
+		- Button Clicks
+		- Musik
+	- Spieler Sounds
+		- Fähigkeiten
+		- Movement
+	- Gegner Sounds
+		- Minions
+		- Endboss
+	- Ambient Sound
+
+Laden / Speichern des Spielstandes (cplex 33) (3 MT) (prio 5) (Younes) (done)
+	- automatisches Speichern während des Spielens
+	- automatisches Laden beim drücken des "Spiel starten" Buttons oder neuen Spielstand erstellen
+	
+Fine Tuning
+	- Gegner Spawner
+		- gegner spawnen nur wenn der spieler sich nicht in der Nähe befindet (Younes) (done)
+	- Spike Trap
+		- Schaden über zeit (pro Sekunde) statt on trigger enter (Kay) (done)
+	- Dart Trap
+		- schießt immer gerade aus (Younes) (done)
+	- UI
+		- wenn game over panel active ist pause, kann der Spieler das Pause Menu nicht einblenden (Younes) (done)
+		- Text Einblendung wenn der Bossraum freigeschaltet wurde (Patrick) (done)
+		- Tutorial (Keybinds) (Patrick) (done)
+		
+		- Stilbruch der HP Bar / Exp Bar fixen (Patrick) (done)
+		- UI Anordnung anpassen (Patrick) (done)
+		
+		- Cursor als Shuriken (Younes) (done)
+		
+	- Tuning der Attributes (Younes) (done)
+
+Bug Fixes
+	- player ground detection (Patrick) (done)
+	- dart masse (Kay) (done)
+	- Boss lightning ability (schießt zu viele projektile) (Younes) (done)
+	
+Sonstiges
+	- Ordner Struktur aufräumen (Kay) (done)
+	
+		
+	
+	

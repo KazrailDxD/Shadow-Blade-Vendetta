@@ -1,0 +1,40 @@
+Asset Liste für Shadow Blade Vendetta:
+
+- Umgebung 
+
+  -Tempel
+ 
+- Lebensanzeige (Herzen)
+
+- Fähigkeiten bilder 2 standard und 1 Ulti Dancing Blades
+
+- Charakter mit fähigkeiten und animationen (Stun,Jump,Run,Idle,Die,Dash,Attack 1, Attack 2, Ultimate 1,)
+
+- Gegner mit fähigkeiten und animationen (Jump,Run,Die,Attack Fernkampf,Attack Nahkampf)
+
+ - Golem , Schutzen Ninja
+
+- End Boss mit fähigkeiten und animationen :
+
+ - Verfluchter Runen Ninja (Rage schwert attacke, Shuriken Regen, Sensen Wirbel)
+
+- Buttons - Beenden,Credits,Speil Starten,Pause,Einstellungen,Zurück,Audio (menü Button Breiter, und Pause button kleiner für in die ecke)
+
+- Menu Screen
+
+- Pause Screen
+
+- Team Logo (PaKaYou Games)
+
+- Samel Objekte(Buddah,Glücksbringer,Münze,Schriftrolle,Onigiri,Shrimp)
+
+- XP Bar (Katana)
+
+- Jump Pad
+
+- Spikes
+
+- Dart Trap
+
+
+
